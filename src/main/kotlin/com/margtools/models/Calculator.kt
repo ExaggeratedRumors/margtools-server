@@ -12,6 +12,6 @@ private constructor(val id: Int, var title: String, var body: String) {
 }
 
 val calculators = mutableListOf(Calculator.newEntry(
-    "Item calculator",
+    "Item",
     "Lets calc"
 ))

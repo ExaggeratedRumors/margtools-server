@@ -13,13 +13,13 @@ import io.ktor.server.util.*
 fun Application.configureRouting() {
     routing {
         static("/static") {
-            resources("files")
+            resources("images")
         }
         get("/") {
-            call.respondRedirect("calculators")
+            call.respondRedirect("item-calculator")
         }
 
-        route("calculators") {
+        route("item-calculator") {
             get {
                 call.respond(FreeMarkerContent("index.ftl", mapOf("articles" to calculators)))
             }
