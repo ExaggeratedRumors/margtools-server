@@ -1,5 +1,3 @@
-# Item Calculator
-
-A tool for generating and checking item statistics.
+# MargTools
 
 Application developed using Ktor framework.
